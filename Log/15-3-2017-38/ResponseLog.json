@@ -1,0 +1,89 @@
+API RESPONSES+
+========
+Registration
+========
+{
+    "errors": {
+        "email": [
+            {
+                "message": "This email address is already tied to an existing account.",
+                "code": 1001
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+My Info Load
+========
+{
+    "results": {
+        "name": "Tester",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": "https://experchatqa.s3.amazonaws.com/9db130515f068ba7cea7b15b7af5638a9c19e9de.png",
+        "display_name": "Tester",
+        "expert_uid": "TeC9I"
+    }
+}
+API RESPONSES+
+========
+Add name to basic info
+========
+{
+    "results": {
+        "name": "Tester",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": "https://experchatqa.s3.amazonaws.com/9db130515f068ba7cea7b15b7af5638a9c19e9de.png",
+        "display_name": "Tester",
+        "expert_uid": "TeC9I"
+    }
+}
+API RESPONSES+
+========
+Me-Photo
+========
+{
+    "results": {
+        "image_url": "https://experchatqa.s3.amazonaws.com/508aab3a07acad788f48ae9f16d53b768d4a1832.png"
+    }
+}
+API RESPONSES+
+========
+My Info Load
+========
+{
+    "results": {
+        "name": "Tester",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": "https://experchatqa.s3.amazonaws.com/508aab3a07acad788f48ae9f16d53b768d4a1832.png",
+        "display_name": "Tester",
+        "expert_uid": "TeC9I"
+    }
+}
+API RESPONSES+
+========
+Phone code sent
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Phone code resent
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}

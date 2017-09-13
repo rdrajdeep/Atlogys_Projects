@@ -1,0 +1,744 @@
+{
+  "variables": [],
+  "info": {
+    "name": "Peach payment",
+    "_postman_id": "62a3e884-624e-b0d1-7b8c-23c75ded2491",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "a2dc43d2-da21-b036-48ee-0cc4e9ebf33f",
+      "name": "UserList",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/users/getUserList.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{logToken}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"getUserList\",\"merchant_id\":\"2\",\"offset\":0,\"per_page\":10}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "f62026ea-0c75-b660-603e-589e950f3fa7",
+      "name": "change USerStatus",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/users/changeUserStatus.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{logToken}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"userRole\",\"value\":true,\"user_id\":\"8\"}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "9c1c7ddb-74c0-c88c-b277-2cbefbb72f07",
+      "name": "MerchantListing",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/users/merchantListing.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{logToken}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"merchantListing\",\"offset\":0,\"per_page\":10}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "4ddab3c6-a1b0-7d76-5f0c-46e46e3d72d9",
+      "name": "SavePayment",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/payments/getCurrencies.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{logToken}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"getTimezonesList\"}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "01db8b77-0bd2-4a98-7b82-69778711744d",
+      "name": "GetCurencies",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/payments/getCurrencies.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{logToken}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"getCurrencyList\"}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "4a2d6554-2be4-0401-43c4-f0dd1f40acf1",
+      "name": "getTimeZone",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/payments/getTimezones.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{logToken}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"getTimezonesList\"}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "b89484d2-e8aa-0434-9e55-550262843167",
+      "name": "merchantProfileDetail",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/users/merchantProfileDetail.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{MerchantDetail}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"getMerchantProfileById\",\"merchant_id\":\"\"}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "dc72caa5-02ae-710a-67fa-0829315b72b3",
+      "name": "PaymentDetail",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/payments/paymentDetail.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{logToken}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"getPaymentsDetailById\",\"payment_id\":\"MTM1OA==\"}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "319da364-c148-544a-2fed-82d6772f8068",
+      "name": "getMerchantPaymentSettings.json",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/merchantProfiles/getMerchantPaymentSettings.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{MerchantDetail}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"getMerchantPaymentSettings\"}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "f2224ea1-0aad-43f5-0308-4e26c18eb45b",
+      "name": "EmailSettings",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/users/getEmailSettings.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{MerchantDetail}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"getEmailSettings\"}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "062bad87-22a4-9040-30fe-b263ddd8f57f",
+      "name": "EmailTemplate",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/users/getTemplate.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{MerchantDetail}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"getEmailtemplate\"}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "2da57562-00fc-61c5-9d14-05991da072bd",
+      "name": "WebHook",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/merchantProfiles/webhookOperations.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{MerchantDetail}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\"getWebhooks\"}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "de399df5-2669-90f9-f7bd-b9c340dd7a7d",
+      "name": "LogOut",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "function getStatus(Status,responseJSON ){\r",
+              "  return responseJSON.status\r",
+              "  \r",
+              "}\r",
+              "\r",
+              "/*Check for the status code*/\r",
+              "if(responseCode.code ==201||responseCode.code ==202||responseCode.code ==200){\r",
+              "/*Parse the JSON*/\r",
+              "var responseJSON=JSON.parse(responseBody);\r",
+              "}\r",
+              "\r",
+              "var st=getStatus(\"Status\",responseJSON );\r",
+              "\r",
+              "if(st==\"success\"){\r",
+              "tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}else{\r",
+              "    tests['current status is===>'+st+'==>']=\"Status\";\r",
+              "}\r",
+              ""
+            ]
+          }
+        }
+      ],
+      "request": {
+        "url": "{{BasePath}}/users/userLogout.json",
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "{{logToken}}",
+            "description": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"action\":\n\"getUserList\",\"merchant_id\":\"2\",\"offset\":0,\"per_page\":10}"
+        },
+        "description": ""
+      },
+      "response": []
+    },
+    {
+      "_postman_id": "86bf2c96-470a-55f8-7bfa-c740b61c7011",
+      "name": "createMerchant",
+      "request": {
+        "url": "{{BasePath}}merchants/createMerchant",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "description": ""
+      },
+      "response": []
+    }
+  ]
+}

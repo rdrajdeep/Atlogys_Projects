@@ -1,0 +1,12 @@
+#org.jbehave.core.embedder.StoryManager
+#Wed Mar 15 17:53:38 IST 2017
+Story/3_ExpertProfile.story=24000
+Story/6_PhoneVerification.story=3000
+Story/2_BasicProfileLoad.story=9000
+Story/1_BasicFlow.story=4000
+Story/7_UserMedia.story=0
+total=46000
+threadAverage=46000
+Story/4_SocialLinks.story=5000
+threads=1
+Story/5_Calling.story=1000

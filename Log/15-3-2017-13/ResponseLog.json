@@ -1,0 +1,137 @@
+API RESPONSES+
+========
+Registration
+========
+{
+    "metadata": {
+        "message": "You have successfully registered!",
+        "code": 2001
+    },
+    "results": {
+        "email": "kishor+expert31@atlogys.com",
+        "verification_code": "f520ce93-0fbd-438e-9871-79630ca686c8"
+    }
+}
+API RESPONSES+
+========
+Resend Email Verification
+========
+{
+    "metadata": {
+        "message": "We have resent your email verification instructions.",
+        "code": 2042
+    },
+    "results": {
+        "verification_code": "f520ce93-0fbd-438e-9871-79630ca686c8",
+        "email": "kishor+expert31@atlogys.com"
+    }
+}
+API RESPONSES+
+========
+Change Password
+========
+{
+    "metadata": {
+        "message": "You have successfully changed your password.",
+        "code": 2021
+    }
+}
+API RESPONSES+
+========
+My Info Load
+========
+{
+    "results": {
+        "name": "",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": null,
+        "display_name": "",
+        "expert_uid": null
+    }
+}
+API RESPONSES+
+========
+Add name to basic info
+========
+{
+    "results": {
+        "name": "Tester",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": null,
+        "display_name": "Tester",
+        "expert_uid": "TeC9I"
+    }
+}
+API RESPONSES+
+========
+Me-Photo
+========
+{
+    "results": {
+        "image_url": "https://experchatqa.s3.amazonaws.com/238ce1f594bc877c59c297d5e8754e555987637e.png"
+    }
+}
+API RESPONSES+
+========
+My Info Load
+========
+{
+    "results": {
+        "name": "Tester",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": "https://experchatqa.s3.amazonaws.com/238ce1f594bc877c59c297d5e8754e555987637e.png",
+        "display_name": "Tester",
+        "expert_uid": "TeC9I"
+    }
+}
+API RESPONSES+
+========
+Expert profile
+========
+{
+    "errors": {
+        "medias": [
+            {
+                "message": "Invalid pk \"1\" - object does not exist.",
+                "code": 1000
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+Add RSS feed
+========
+<html>
+  <body>
+    <h1>Not Found</h1>
+    <p>The requested URL /v1/feed/addlink/http://feeds.feedburner.com/ndtvnews-latest was not found on this server.</p>
+  </body>
+</html>
+API RESPONSES+
+========
+Phone code sent
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}
+API RESPONSES+
+========
+Phone code resent
+========
+{
+    "errors": {
+        "detail": "Invalid token."
+    }
+}

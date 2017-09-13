@@ -1,0 +1,250 @@
+API RESPONSES+
+========
+Registration
+========
+{
+    "errors": {
+        "email": [
+            {
+                "message": "This email address is already tied to an existing account.",
+                "code": 1001
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+My Info Load
+========
+{
+    "results": {
+        "name": "Tester",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": "https://experchatqa.s3.amazonaws.com/281b8213043c9530d14af2ae31fed845b8aca95d.png",
+        "display_name": "Tester",
+        "expert_uid": "TeC9I"
+    }
+}
+API RESPONSES+
+========
+Add name to basic info
+========
+{
+    "results": {
+        "name": "Tester",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": "https://experchatqa.s3.amazonaws.com/281b8213043c9530d14af2ae31fed845b8aca95d.png",
+        "display_name": "Tester",
+        "expert_uid": "TeC9I"
+    }
+}
+API RESPONSES+
+========
+Me-Photo
+========
+{
+    "results": {
+        "image_url": "https://experchatqa.s3.amazonaws.com/e60abe83596b0898910772ee392a54b1a5d7e3c7.png"
+    }
+}
+API RESPONSES+
+========
+My Info Load
+========
+{
+    "results": {
+        "name": "Tester",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": "https://experchatqa.s3.amazonaws.com/e60abe83596b0898910772ee392a54b1a5d7e3c7.png",
+        "display_name": "Tester",
+        "expert_uid": "TeC9I"
+    }
+}
+API RESPONSES+
+========
+Expert profile
+========
+{
+    "results": {
+        "id": 88,
+        "tags": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "medias": [
+            
+        ],
+        "expert": {
+            "id": 42,
+            "display_name": "Tester",
+            "profile_photo": "https://experchatqa.s3.amazonaws.com/e60abe83596b0898910772ee392a54b1a5d7e3c7.png",
+            "expert_uid": "TeC9I",
+            "avg_rating": "0.00",
+            "num_rating": 0
+        },
+        "headline": "Java-8 Lambda",
+        "summary": "Java Expert",
+        "my_experience": "In test automation",
+        "year_of_experience": 3,
+        "educational_background": "Bachelor of Technology (Computer Science and Information Engineering)"
+    }
+}
+API RESPONSES+
+========
+Expert profile
+========
+{
+    "results": {
+        "id": 89,
+        "tags": [
+            
+        ],
+        "medias": [
+            
+        ],
+        "expert": {
+            "id": 42,
+            "display_name": "Tester",
+            "profile_photo": "https://experchatqa.s3.amazonaws.com/e60abe83596b0898910772ee392a54b1a5d7e3c7.png",
+            "expert_uid": "TeC9I",
+            "avg_rating": "0.00",
+            "num_rating": 0
+        },
+        "headline": "Java-8 Lambda",
+        "summary": "Java Expert",
+        "my_experience": "In test automation",
+        "year_of_experience": 3,
+        "educational_background": "Bachelor of Technology (Computer Science and Information Engineering)"
+    }
+}
+API RESPONSES+
+========
+Add RSS feed
+========
+{
+    "results": {
+        "message": "Successfull",
+        "id": 22
+    }
+}
+API RESPONSES+
+========
+Add RSS feed
+========
+{
+    "results": {
+        "message": "Successfull",
+        "id": 24
+    }
+}
+API RESPONSES+
+========
+Get Social Link
+========
+{
+    "metadata": {
+        "count": 2,
+        "next": null,
+        "previous": null
+    },
+    "results": [
+        {
+            "id": 22,
+            "created_timestamp": "2017-03-15T05:40:47.438619Z",
+            "modified_timestamp": "2017-03-15T10:35:37.887618Z",
+            "feed_type": 4,
+            "feed_sub_type": 4,
+            "detail": "https://staff.tumblr.com/rss/",
+            "display_name": "Tumblr Staff",
+            "is_deleted": false,
+            "account": 20
+        },
+        {
+            "id": 24,
+            "created_timestamp": "2017-03-15T08:35:34.642219Z",
+            "modified_timestamp": "2017-03-15T10:35:38.731357Z",
+            "feed_type": 4,
+            "feed_sub_type": 4,
+            "detail": "http://feeds.feedburner.com/ndtvnews-world-news",
+            "display_name": "NDTV News  - World-news",
+            "is_deleted": false,
+            "account": 23
+        }
+    ]
+}
+API RESPONSES+
+========
+Add social link to expert profile
+========
+{
+    "results": {
+        "social_link_ids": [
+            
+        ]
+    }
+}
+API RESPONSES+
+========
+Get social link from expert profile
+========
+{
+    "metadata": {
+        "count": 0,
+        "next": null,
+        "previous": null
+    },
+    "results": [
+        
+    ]
+}
+API RESPONSES+
+========
+Phone code sent
+========
+{
+    "results": {
+        "metadata": {
+            "message": "OTP has been sent again for Phone Verification.",
+            "code": 2072
+        },
+        "verification_code": "298763"
+    }
+}
+API RESPONSES+
+========
+Phone code resent
+========
+{
+    "results": {
+        "metadata": {
+            "message": "OTP has been sent again for Phone Verification.",
+            "code": 2072
+        },
+        "verification_code": "298763"
+    }
+}
+API RESPONSES+
+========
+Mobile no verify
+========
+{
+    "errors": {
+        "non_field_errors": [
+            {
+                "message": "Invalid data. Expected a dictionary, but got int.",
+                "code": 1000
+            }
+        ]
+    }
+}

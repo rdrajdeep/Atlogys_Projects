@@ -1,0 +1,214 @@
+API RESPONSES+
+========
+Registration
+========
+{
+    "results": {
+        "email": "kishor+expert31@atlogys.com",
+        "verification_code": "5fe4a190-7970-4313-bf46-decdc1c81e8e"
+    },
+    "metadata": {
+        "message": "You have successfully registered!",
+        "code": 2001
+    }
+}
+API RESPONSES+
+========
+Resend Email Verification
+========
+{
+    "results": {
+        "email": "kishor+expert31@atlogys.com",
+        "verification_code": "5fe4a190-7970-4313-bf46-decdc1c81e8e"
+    },
+    "metadata": {
+        "message": "We have resent your email verification instructions.",
+        "code": 2042
+    }
+}
+API RESPONSES+
+========
+Change Password
+========
+{
+    "metadata": {
+        "message": "You have successfully changed your password.",
+        "code": 2021
+    }
+}
+API RESPONSES+
+========
+My Info Load
+========
+{
+    "results": {
+        "name": "",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": null,
+        "display_name": "",
+        "expert_uid": null
+    }
+}
+API RESPONSES+
+========
+Add name to basic info
+========
+{
+    "results": {
+        "name": "Tester",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": null,
+        "display_name": "Tester",
+        "expert_uid": "TES3G"
+    }
+}
+API RESPONSES+
+========
+Me-Photo
+========
+{
+    "results": {
+        "image_url": "https://experchatqa.s3.amazonaws.com/512e5731640aafda9ec22a5c3982b22d313ec687.png"
+    }
+}
+API RESPONSES+
+========
+My Info Load
+========
+{
+    "results": {
+        "name": "Tester",
+        "email": "kishor+expert31@atlogys.com",
+        "country_code": "",
+        "phone_number": "",
+        "is_phone_number_verified": false,
+        "profile_photo": "https://experchatqa.s3.amazonaws.com/512e5731640aafda9ec22a5c3982b22d313ec687.png",
+        "display_name": "Tester",
+        "expert_uid": "TES3G"
+    }
+}
+API RESPONSES+
+========
+Expert profile
+========
+{
+    "results": {
+        "id": 138,
+        "tags": [
+            
+        ],
+        "medias": [
+            
+        ],
+        "created_timestamp": "2017-02-20T13:54:48.767178Z",
+        "modified_timestamp": "2017-02-20T13:54:48.767229Z",
+        "headline": "Java-8 Lambda",
+        "summary": "Java Expert",
+        "my_experience": "In test automation",
+        "year_of_experience": 3,
+        "educational_background": "Bachelor of Technology (Computer Science and Information Engineering)"
+    }
+}
+API RESPONSES+
+========
+Expert profile
+========
+{
+    "results": {
+        "id": 139,
+        "tags": [
+            
+        ],
+        "medias": [
+            
+        ],
+        "created_timestamp": "2017-02-20T13:55:27.823048Z",
+        "modified_timestamp": "2017-02-20T13:55:27.823111Z",
+        "headline": "Java-8 Lambda",
+        "summary": "Java Expert",
+        "my_experience": "In test automation",
+        "year_of_experience": 3,
+        "educational_background": "Bachelor of Technology (Computer Science and Information Engineering)"
+    }
+}
+API RESPONSES+
+========
+Add RSS feed
+========
+{
+    "errors": {
+        "url": [
+            {
+                "message": "Enter a valid URL.",
+                "code": 1000
+            }
+        ]
+    }
+}
+API RESPONSES+
+========
+Generate Call
+========
+{
+    "results": {
+        "id": 1821,
+        "expert_profile_id": 122,
+        "expert_id": 233,
+        "scheduled_duration": 10
+    }
+}
+API RESPONSES+
+========
+Accept Call
+========
+{
+    "results": {
+        "data": {
+            "session_token": "T1==cGFydG5lcl9pZD00NTczMjQ1MiZzaWc9Njg3OTM1OWM1ODQxMzA5Nzk5MTIwZjI2MmJjMjcwNmFiNjk0ZTJjODpleHBpcmVfdGltZT0xNDg3NjE2OTMyJnJvbGU9cHVibGlzaGVyJnNlc3Npb25faWQ9Ml9NWDQwTlRjek1qUTFNbjUtTVRRNE56VTVPRGt6TWpjNU4zNXhOVnBpTVN0d1lVTkxNM2wyY2tZeVltd3ZXVkp4VGxsLWZnJmNyZWF0ZV90aW1lPTE0ODc1OTg5MzImY29ubmVjdGlvbl9kYXRhPU5vbmUmbm9uY2U9OTA1NjA4",
+            "status": "1",
+            "seesion_id": "2_MX40NTczMjQ1Mn5-MTQ4NzU5ODkzMjc5N35xNVpiMStwYUNLM3l2ckYyYmwvWVJxTll-fg",
+            "timestamp": "1487598932",
+            "call_timeout": 60,
+            "apiKey": "45732452"
+        },
+        "status": 2
+    }
+}
+API RESPONSES+
+========
+Decline Call
+========
+{
+    "results": {
+        "status": 2
+    }
+}
+API RESPONSES+
+========
+Delay Call
+========
+{
+    "results": {
+        "status": 2
+    }
+}
+API RESPONSES+
+========
+Phone code sent
+========
+{
+    "errors": {
+        "non_field_errors": [
+            {
+                "message": "Phone number is already registered but not verified .",
+                "code": 1082
+            }
+        ]
+    }
+}
